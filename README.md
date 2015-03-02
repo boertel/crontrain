@@ -1,4 +1,4 @@
-# CRONTRAIN
+# CRONTRAIN (only works on OS X)
 
 ## Installation:
 
@@ -23,7 +23,7 @@ then put back the current crontab and the new one to your crontab:
 
 ```
 cat crontab crontab.backup > crontab.tmp
-crontab > crontab.tmp
+crontab < crontab.tmp
 rm crontab.tmp
 ```
 
