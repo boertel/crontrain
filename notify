@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ $# = 0 ]]; then
+    echo "usage: notify text [title]"
+    exit 64
+fi
+
+osascript -e "display notification \"$1\" with title \"$2\""

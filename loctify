@@ -1,0 +1,13 @@
+#!/bin/bash
+# command: loctify
+
+if [[ $# = 0 ]]; then
+    echo "usage: loctify text [title] [ssid]"
+    exit 64
+fi
+
+SSID="$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | sed -e "s/^  *SSID: //p" -e d)"
+
+if [[ -z "$3" || $SSID == $3 ]]; then
+    /usr/local/bin/notify $@
+fi
