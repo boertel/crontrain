@@ -1,4 +1,4 @@
-# CRONTRAIN
+# CRONTRAIN (only works on OS X)
 
 ## Installation:
 
