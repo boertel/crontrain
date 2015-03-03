@@ -3,7 +3,7 @@
 SSID="<YOUR_SSID>"
 CALTRAIN_TITLE="Caltrain Alert"
 
-55 15-18 * * 1-5     /usr/local/bin/loctify "Caltrain in 15 minutes" "$CALTRAIN_TITLE" "$SSID"
-58 15-18 * * 1-5     /usr/local/bin/loctify "SAFE to leave. Caltrain in 12 minutes" "$CALTRAIN_TITLE" "$SSID"
-00 16-19 * * 1-5     /usr/local/bin/loctify "LEAVE NOW. Caltrain in 10 minutes" "$CALTRAIN_TITLE" "$SSID"
-11 16-19 * * 1-5     /usr/local/bin/loctify "Caltrain left. Next in 1 hour" "$CALTRAIN_TITLE" "$SSID"
+55 15-18 * * 1-5     /usr/local/bin/loctify "Caltrain in 15 minutes" "$CALTRAIN_TITLE" "$SSID" > /dev/null 2>&1
+58 15-18 * * 1-5     /usr/local/bin/loctify "SAFE to leave. Caltrain in 12 minutes" "$CALTRAIN_TITLE" "$SSID" > /dev/null 2>&1
+00 16-19 * * 1-5     /usr/local/bin/loctify "LEAVE NOW. Caltrain in 10 minutes" "$CALTRAIN_TITLE" "$SSID" > /dev/null 2>&1
+11 16-19 * * 1-5     /usr/local/bin/loctify "Caltrain left. Next in 1 hour" "$CALTRAIN_TITLE" "$SSID" > /dev/null 2>&1
