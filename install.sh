@@ -1,3 +1,5 @@
+#!/bin/bash
+
 DEST_DIR=/usr/local/bin/
 
 cp notify $DEST_DIR
